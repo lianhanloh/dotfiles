@@ -3,6 +3,7 @@ alias cis="cd ~/Documents/Penn/Academics/CIS"
 alias econ2="cd ~/Documents/Penn/Academics/Econ/Econ\ 002"
 alias crim="cd ~/Documents/Penn/Academics/Crim\ 280"
 alias dl="cd ~/Downloads"
+alias ..="cd .."
 
 #eniac is the shortcut command for ssh into lianhan@eniac.seas.upenn.edu
 alias eniac="ssh eniac"
@@ -15,3 +16,5 @@ export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 
 #sets auto color option for ls
 alias ls="ls -G"
+
+
