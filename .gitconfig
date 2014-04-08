@@ -10,8 +10,10 @@
 	hist = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --date=short --abbrev-commit
 [color]
 	diff = always
+[diff] 
+	tool = vimdiff
 [merge] 
-	vimdiff
+	tool = vimdiff
 [push]
 	simple
 	default = simple
