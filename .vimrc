@@ -14,3 +14,6 @@ filetype indent plugin on
 
 " sets color scheme to match dark backgrounds
 set background=dark
+
+" Ignore case when searching
+set ignorecase
