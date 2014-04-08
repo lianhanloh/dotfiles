@@ -81,6 +81,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+#sets auto color option for ls
+alias ls="ls -G"
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -106,10 +109,15 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-#aliases
+# set default editor as vim
+export EDITOR=vim
+
+#lianhan's specific aliases
+alias cis="cd ~/Documents/Penn/Academics/CIS"
+alias econ2="cd ~/Documents/Penn/Academics/Econ/Econ\ 002"
+alias crim="cd ~/Documents/Penn/Academics/Crim\ 280"
+alias dl="cd ~/Downloads"
+alias ..="cd .."
 alias eniac="ssh eniac"
 alias lsd="cd ~/Documents; ls"
 alias tarc="tar -czf"
-
-# set default editor as vim
-export EDITOR=vim
