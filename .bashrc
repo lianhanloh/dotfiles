@@ -121,3 +121,6 @@ alias ..="cd .."
 alias eniac="ssh eniac"
 alias lsd="cd ~/Documents; ls"
 alias tarc="tar -czf"
+
+#customizes prompt to display hostname and current working directory
+PS1="\h: \w $ "
