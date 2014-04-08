@@ -1,7 +1,19 @@
-[core]
-	editor = vim
 [user]
 	name = lianhanloh
 	email = loh.lianhan@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+	# colorful git log
+	hist = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --date=short --abbrev-commit
+[color]
+	diff = always
+	ui = true
+[diff] 
+	tool = vimdiff
+[merge] 
+	tool = vimdiff
 [push]
 	default = simple
