@@ -3,3 +3,5 @@
 [user]
 	name = lianhanloh
 	email = loh.lianhan@gmail.com
+[push]
+	default = simple
