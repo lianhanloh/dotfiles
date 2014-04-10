@@ -1,4 +1,10 @@
 " This lists my .vimrc preferences
+"
+" vimrc files referenced:
+" www.apaulodesign.com/vimrc.html
+" amix.dk/vim/vimrc.html
+
+set nocompatible " use vim defaults (much better apparently)
 
 set ruler
 set number
@@ -34,3 +40,4 @@ set incsearch
 " ^ abbreviated by ":noh"
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+set wrapscan " allows search to wrap to top of document when bottom has been hit
