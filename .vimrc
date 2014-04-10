@@ -8,8 +8,10 @@ set shiftwidth=2
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+set lbr "Line breaks on whitespace only
+set textwidth=100
 
-" sets shift+enter as a shortcut to insert new line without going into insert mode
+" sets shift+enter as a shortcut to insert new line without going into insert mode                 
 nmap <S-Enter> o<Esc>
 nmap <CR> o<Esc>
 
