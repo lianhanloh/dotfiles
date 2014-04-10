@@ -1,5 +1,6 @@
 " This lists my .vimrc preferences
 
+set ruler
 set number
 set tabstop=2
 set shiftwidth=2
