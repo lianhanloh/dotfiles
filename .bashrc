@@ -124,3 +124,5 @@ alias tarc="tar -czf"
 
 #customizes prompt to display hostname and current working directory
 PS1="\h: \w $ "
+
+export VISUAL=vim
