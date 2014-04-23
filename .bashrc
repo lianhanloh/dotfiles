@@ -81,14 +81,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-#sets auto color option for ls
-alias ls="ls -G"
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -112,15 +104,28 @@ fi
 # set default editor as vim
 export EDITOR=vim
 
+#sets auto color option for ls
+alias ls="ls -G"
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias lsd='ls ~/Downloads'
+
 #lianhan's specific aliases
+alias eniac="ssh eniac"
+alias tarc="tar -czf"
+alias down="~/Downloads"
+
+# Directory navigation
 alias cis="cd ~/Documents/Penn/Academics/CIS"
 alias econ2="cd ~/Documents/Penn/Academics/Econ/Econ\ 002"
 alias crim="cd ~/Documents/Penn/Academics/Crim\ 280"
 alias dl="cd ~/Downloads"
+# .. aliases
 alias ..="cd .."
-alias eniac="ssh eniac"
-alias lsd="cd ~/Documents; ls"
-alias tarc="tar -czf"
+alias .2.="cd ../.."
 
 #customizes prompt to display hostname and current working directory
 PS1="\h: \w $ "
