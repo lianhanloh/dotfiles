@@ -130,4 +130,5 @@ alias .2.="cd ../.."
 #customizes prompt to display hostname and current working directory
 PS1="\h: \w $ "
 
+# sets visual editor to vim (was meant for crontab editing in eniac)
 export VISUAL=vim
