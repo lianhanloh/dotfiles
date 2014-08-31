@@ -123,9 +123,11 @@ alias cis="cd ~/Documents/Penn/Academics/CIS"
 alias econ2="cd ~/Documents/Penn/Academics/Econ/Econ\ 002"
 alias crim="cd ~/Documents/Penn/Academics/Crim\ 280"
 alias dl="cd ~/Downloads"
+alias acad="cd ~/Documents/Penn/Academics"
 # .. aliases
 alias ..="cd .."
 alias .2.="cd ../.."
+alias cs="cd ~/cs"
 
 #customizes prompt to display hostname and current working directory
 PS1="\h: \w $ "
