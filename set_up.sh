@@ -32,6 +32,7 @@ then
 	mkdir .ssh
 fi
 if [ ! -e .ssh/config ]
+then
 	ln -sv ~/dotfiles/.ssh/config .ssh/config
 	echo ".ssh/config symlink created"
 else
