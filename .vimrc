@@ -3,6 +3,14 @@
 " vimrc files referenced:
 " www.apaulodesign.com/vimrc.html
 " amix.dk/vim/vimrc.html
+"
+
+"calls pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
+
+"for nerd commenter
+filetype plugin on
 
 set nocompatible " use vim defaults (much better apparently)
 
@@ -41,3 +49,8 @@ set incsearch
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set wrapscan " allows search to wrap to top of document when bottom has been hit
+
+" File Specific Settings
+" ------------------------------------------------------------
+au FileType java,js setlocal smartindent                    " enable the smartindenting (si) feature for the following files
+au BufReadPost *.ejs set syntax=html												" set html syntax for .ejs files
