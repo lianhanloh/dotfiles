@@ -124,13 +124,20 @@ alias econ2="cd ~/Documents/Penn/Academics/Econ/Econ\ 002"
 alias crim="cd ~/Documents/Penn/Academics/Crim\ 280"
 alias dl="cd ~/Downloads"
 alias acad="cd ~/Documents/Penn/Academics"
+alias indon="cd ~/Documents/Penn/Academics/Indon"
 # .. aliases
 alias ..="cd .."
 alias .2.="cd ../.."
 alias cs="cd ~/cs"
 
 #customizes prompt to display hostname and current working directory
-PS1="\h: \w $ "
+PS1="\h: \w \$ "
 
 # sets visual editor to vim (was meant for crontab editing in eniac)
 export VISUAL=vim
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# for svn
+export PATH=/usr/local/bin:$PATH

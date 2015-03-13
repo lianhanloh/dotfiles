@@ -18,12 +18,17 @@ set ruler
 set number
 set tabstop=2
 set shiftwidth=2
+set expandtab
 
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
-set lbr "Line breaks on whitespace only
-set textwidth=100
+" set lbr "Line breaks on whitespace only
+set linebreak
+set nolist " list disables linebreak
+set textwidth=0
+set wrapmargin=0
+set formatoptions+=1
 
 " sets shift+enter as a shortcut to insert new line without going into insert mode                 
 nmap <S-Enter> o<Esc>
