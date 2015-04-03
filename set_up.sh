@@ -4,6 +4,15 @@
 # .vimrc
 # .ssh/config
 
+promptyn () {
+  read -p "Do you want to replace the $1 file? (y/n): " yn
+  case $yn in 
+    [Yy]* ) echo "replacing file";cp dotfiles/$1 ~/$1;;
+
+    * ) echo "alright";;
+  esac
+}
+
 echo "setting up symlinks for .vimrc, .bashrc and .gitconfig"
 pushd ~
 if [ ! -e .vimrc ]
@@ -19,6 +28,8 @@ then
 	echo ".bashrc symlink created"
 else 
 	echo ".bashrc symlink exists"
+  promptyn ".bashrc"
+  echo "checking gitconfig.."
 fi
 if [ ! -e .gitconfig ]
 then 
@@ -26,6 +37,8 @@ then
 	echo ".gitconfig symlink created"
 else 
 	echo ".gitconfig symlink exists"
+  promptyn ".gitconfig"
+  echo "moving on to ssh.."
 fi
 if [ ! -d .ssh ]
 then
