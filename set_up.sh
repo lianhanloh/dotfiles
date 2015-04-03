@@ -31,6 +31,7 @@ else
   promptyn ".bashrc"
   echo "checking gitconfig.."
 fi
+source ~/.bashrc
 if [ ! -e .gitconfig ]
 then 
 	ln -sv dotfiles/.gitconfig .gitconfig
