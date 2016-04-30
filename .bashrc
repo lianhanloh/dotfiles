@@ -130,6 +130,11 @@ alias ..="cd .."
 alias .2.="cd ../.."
 alias cs="cd ~/cs"
 
+# aliases for rust
+alias ct="cargo test"
+alias cb="cargo build" 
+alias cr="cargo run"
+
 #customizes prompt to display hostname and current working directory
 PS1="\h: \w \$ "
 
@@ -141,3 +146,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # for svn
 export PATH=/usr/local/bin:$PATH
+
+# for spyder to run without "ValueError: unknown locale: UTF-8"
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
