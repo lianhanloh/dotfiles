@@ -125,15 +125,21 @@ alias crim="cd ~/Documents/Penn/Academics/Crim\ 280"
 alias dl="cd ~/Downloads"
 alias acad="cd ~/Documents/Penn/Academics"
 alias indon="cd ~/Documents/Penn/Academics/Indon"
+alias cs="cd ~/cs"
+
 # .. aliases
 alias ..="cd .."
 alias .2.="cd ../.."
-alias cs="cd ~/cs"
 
 # aliases for rust
 alias ct="cargo test"
 alias cb="cargo build" 
 alias cr="cargo run"
+
+# aliases for git
+alias gp="git pull"
+alias gs="git status"
+alias gpu="git push"
 
 #customizes prompt to display hostname and current working directory
 PS1="\h: \w \$ "
@@ -150,3 +156,12 @@ export PATH=/usr/local/bin:$PATH
 # for spyder to run without "ValueError: unknown locale: UTF-8"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# eniac shortcuts
+
+# ssh into speclab $1
+spec () { ssh spec${1}.seas.upenn.edu; }
+
+export ORACLE_HOME=/usr/local/oracle
+export PATH=${PATH}:${ORACLE_HOME}/bin
+alias sql='sqlplus lianhan@cisora'
